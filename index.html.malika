@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,500italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+         padding-top: 60px;
+        }
+        .linediv-l {
+         border-right: 1px white solid;
+        }
+        .linediv-r {
+         border-left: 1px white solid;
+        }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
+        .copy {
+         padding: 2.5% 10%;
+        }
+        .linediv-l {
+         border-bottom: 1px white solid;
+        }
+        .linediv-r {
+         border-top: 1px white solid;
+        }
+      }
+
+      /* All form factors */
+
+      /* Main body and headings */
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
+    </style>
+  </head>
+  <body>
+
+   <!-- Mobile-friendly navbar adapted from example. -->
+   <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+   <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar-inner">
+       <div class="container">
+	 <button type="button" class="btn btn-navbar"
+		 data-toggle="collapse" data-target=".nav-collapse">
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	 </button>
+	 <a class="brand" href="#">Bitstarter</a>
+	 <div class="nav-collapse collapse">
+	   <ul class="nav">
+	     <li class="active"><a href="#">Home</a></li>
+	     <li><a href="#about">About</a></li>
+	     <li><a href="#contact">Contact</a></li>
+	   </ul>
+	 </div><!--/.nav-collapse -->
+       </div>
+     </div>
+   </div>
+
+   <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+   <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+   <!-- http://stackoverflow.com/a/12270322 -->
+   <div class="container">
+     <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+     <!-- www.google.com/fonts/specimen/Ubuntu -->
+     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+     <div class="row-fluid heading">
+       <div class="span12">
+	 <h1>Make My Meals</h1>
+       </div>
+     </div>
+     <div class="row-fluid subheading">
+       <div class="span12">
+	 <!-- Special typography from Bootstrap for lead paragraph -->
+	 <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	 <p class="lead">Gourmet home cooked meals for pickup or delivery to your doorstep! </p>
+       </div>
+     </div>
+    
+     <div class="row-fluid pitch">
+       <div class="span5 offset1 video">
+	 <img class="img-polaroid" src="http://i.imgur.com/S1QTvmN.jpg">
+       </div>
+
+       <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+       <div class="span5 actions">
+	 <div class="span8 offset2">
+	   <div class="statistics">
+	     <div class="span4">
+	       <!-- linediv-l and linediv-r give dividing lines that look
+		    different in horizontal and vertical layouts, illustrating
+		    media queries. -->
+	       <div class="linediv-l">
+		 <h3>4</h3> <p>backers</p>
+	       </div>
+	     </div>
+	     <div class="span4">
+	       <div class="linediv-c">
+		 <h3>$1000</h3> <p>of $100,000</p>
+	       </div>
+	     </div>
+	     <div class="span4">
+	       <div class="linediv-r">
+		 <h3>90</h3> <p>days left</p>
+	       </div>
+	     </div>
+	   </div>
+         </div>
+         <div class="span10 offset1">
+	   <!-- Bootstrap progress bar -->
+	   <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	   <div class="thermometer progress active">
+	     <div class="bar bar-success" style="width: 3%;"></div>
+	     <div class="bar bar-warning" style="width: 97%;"></div>
+	   </div>
+         </div>
+	 <div class="span6 offset3 order">
+	   <!-- Standard Bootstrap button. -->
+	   <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+	   <button class="btn btn-success btn-large">Preorder</button>
+	 </div>
+	 <div class="span8 offset2 social">
+	   <!-- Social buttons are not included in default Bootstrap. -->
+	   <!-- See http://noizwaves.github.io/bootstrap-social-buttons -->
+	   <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+	   <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	 </div>
+       </div>
+     </div>
+
+     <!-- Beyond this part the marketing copy begins -->
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+     <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+     <!-- http://placehold.it -->
+     <div class="row-fluid section1">
+       <div class="span5 offset1 asset">
+	 <img class="img-polaroid" src="http://i.imgur.com/JJD14Y7.jpg" alt="Home cooked meals">
+       </div>
+       <div class="span5 copy">
+         <p>
+	   Make My Meals is a service that delivers gourmet home cooked meals to your doorstep! <br><br>All you need to do is enter your zip code and order online. Our service will connect you up with a local chef in your area that prepares & delivers home cooked meals!<br> <br>
+<b>We take care of all your special dietary needs. 
+If you have any dietary restrictions such as sugar free, low salt, low fat, or anything else, we take care of it for you!</b>
+	 </p>  
+       </div>
+     </div>
+
+     <div class="row-fluid section2">
+       <div class="span5 offset1 copy copy-right">
+	 <p>
+	   You can order food online or download our Android/iphone app <b>makemymeals</b><br><br> 
+Select from our delicious menu and then place an order. You can also select our weekly or monthly packages where you sign up for meals for as many days or weeks of a month.  Leave it to the experts from there!<br><br>
+Please help us serve you and your fellow customers better by writing reviews for the food & service we provide. If you would like to make meals for our customers, please <a href="mailto:malika.sangani@gmail.com">Email Me</a> your information. 
+	   </p>
+       </div>
+       <div class="span5 asset">
+	 <img class="img-polaroid" src="http://i.imgur.com/0o01xsk.jpg">
+       </div>
+     </div>
+
+     <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+     <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+     <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+     <div class="row-fluid faq">
+       <div class="span10 offset1">
+	 <h3>FAQ</h3>
+	 <div class="accordion" id="accordion2">
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseOne">
+		 Who Am I & Why this service?
+	       </a>
+	     </div>
+	     <div id="collapseOne" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 As a geeky Web Technologist & crazy food lover, I combined my two passions to give you this special service. I am a trained Nutritionist too, so rest assure your meals are prepared with great care, love, and healthy ingredients. 
+For those of you who are local to the San Francisco Bay Area, come join the cooking lessons we offer!
+	       </div>
+	     </div>
+	   </div>
+	   <div class="accordion-group">
+	     <div class="accordion-heading">
+	       <a class="accordion-toggle" data-toggle="collapse"
+		  data-parent="#accordion2" href="#collapseTwo">
+		 Our Mission & Vision
+	       </a>
+	     </div>
+	     <div id="collapseTwo" class="accordion-body collapse">
+	       <div class="accordion-inner">
+		 Our goal is to provide all our customers delicious and healthy meals. 
+		 We understand you lead busy lives, may be elderly, or just may not have the inclination to prepare home cooked meals. We will connect you to local chefs in your area. <br><br>Currently, our roadmap begins with a few metropolitan cities. We will add more cities as we get more local folks to join our program. We hope you find our service and pricing competitive and affordable. <br>
+To all local cooks out there, come join our service, and we will connect you to a community who actively look forward to using your service. 
+	       </div>
+	     </div>
+	   </div>
+	 </div>
+       </div>
+     </div>
+
+     <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+     <!-- http://creativecommons.org/licenses/ -->
+     <div class="row-fluid footer">
+       <div class="span12">
+	 <p>This work is licensed under
+	   the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+	     By-SA 3.0
+	   </a>, without all the cruft that would otherwise be
+	   put at the bottom of the page.</p>
+       </div>
+     </div>
+   </div>
+  </body>
+</html>
